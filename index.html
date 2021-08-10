@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Reproductor de video</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="reproductor">
+            <h2 class="player-titulo">Música para rogramar</h2>
+            <video id="video" poster="images/poster.jpg" src="videos/lofi.mp4" muted></video>
+            <div class="overlay">
+                <div class="player-actions">
+                    <button class="button" id="atras"></button>
+                    <button class="button" id="play"></button>
+                    <button class="button" id="pause" hidden></button>
+                    <button class="button" id="adelante"></button>
+                </div>
+                <div class="player-progress">
+                    <input type="range" value="0" min="0" step="1" id="progreso">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="js/index.js">
+    </script>
+</body>
+
+</html>
